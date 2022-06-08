@@ -21,6 +21,7 @@ for xlName in xlFiles:
         xlFile = app.books.open(xlPath,update_links= False,read_only= True)
         for sht in xlFile.sheets:
             if sht.name[0] != '!':
+                print(sht.name)
                 usedList = sht.used_range.value
                 titleList = usedList[1] # 第二行为标题
                 dataMap={}
@@ -32,7 +33,7 @@ for xlName in xlFiles:
                             lineMap[titleList[c]] = usedList[r][c]
                     mapList.append(lineMap)
                 dataMap[sht.name] = mapList
-                print(titleList)
+                
                 jsonFile = io.open(os.path.join(dataFloder,sht.name + '.json'),'w',encoding='utf-8')
                 jsonStr = json.dumps(dataMap,indent=2,ensure_ascii=False)
                 jsonFile.write(jsonStr)

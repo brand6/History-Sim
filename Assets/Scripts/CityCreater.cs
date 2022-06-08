@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CityCreater : MonoBehaviour
 {
-	public Citys citys;
+	public Citys Citys;
 
 	private void Awake()
 	{
-		citys = JsonTools.loadJsonFileToObj<Citys>(Application.dataPath, "Data", "Citys.json");
+		Citys = JsonTools.loadJsonFileToObj<Citys>(Application.dataPath, "Data", "citys.json");
 	}
 }

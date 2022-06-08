@@ -5,9 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class Citys
 {
-	public Citys[] citys;
+	public City[] citys;
 
-	public Citys(Citys[] citys)
+	public Citys(City[] citys)
 	{
 		this.citys = citys;
 	}

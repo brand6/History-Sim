@@ -1,0 +1,40 @@
+{
+  "roles": [
+    {
+      "id#id": 1.0,
+      "name#string": "曹操",
+      "familyName#string": "曹",
+      "name2#string": "孟德"
+    },
+    {
+      "id#id": 2.0,
+      "name#string": "刘备",
+      "familyName#string": "刘",
+      "name2#string": "玄德"
+    },
+    {
+      "id#id": 3.0,
+      "name#string": "孙权",
+      "familyName#string": "孙",
+      "name2#string": "仲谋"
+    },
+    {
+      "id#id": 4.0,
+      "name#string": "荀彧",
+      "familyName#string": "荀",
+      "name2#string": "文若"
+    },
+    {
+      "id#id": 5.0,
+      "name#string": "诸葛亮",
+      "familyName#string": "诸葛",
+      "name2#string": "孔明"
+    },
+    {
+      "id#id": 6.0,
+      "name#string": "周瑜",
+      "familyName#string": "周",
+      "name2#string": "公瑾"
+    }
+  ]
+}
