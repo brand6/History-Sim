@@ -1,0 +1,28 @@
+{
+  "Citys": [
+    {
+      "id": 1.0,
+      "name": "许昌",
+      "size": 4.0,
+      "population": 780000.0,
+      "bloc": 1.0,
+      "mayor": 1.0
+    },
+    {
+      "id": 2.0,
+      "name": "成都",
+      "size": 3.0,
+      "population": 450000.0,
+      "bloc": 2.0,
+      "mayor": 2.0
+    },
+    {
+      "id": 3.0,
+      "name": "建业",
+      "size": 3.0,
+      "population": 560000.0,
+      "bloc": 3.0,
+      "mayor": 3.0
+    }
+  ]
+}
