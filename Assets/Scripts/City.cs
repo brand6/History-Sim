@@ -5,26 +5,32 @@ using UnityEngine;
 [System.Serializable]
 public class Citys
 {
-	public List<City> citys;
+	public Citys[] citys;
+
+	public Citys(Citys[] citys)
+	{
+		this.citys = citys;
+	}
 }
 
 [System.Serializable]
 public class City
 {
-	public int cityId;
-	public string cityName;
+	public int id;
+	public string name;
 	public int size;
 	public int population;
 	public int bloc;
 	public int mayor;
 
-	public City(int cityId, string cityName, int size, int population, int bloc, int mayor)
+	public City(int id, string name, int size, int population, int bloc, int mayor)
 	{
-		this.cityId = cityId;
-		this.cityName = cityName;
+		this.id = id;
+		this.name = name;
 		this.size = size;
 		this.population = population;
 		this.bloc = bloc;
 		this.mayor = mayor;
 	}
 }
+
