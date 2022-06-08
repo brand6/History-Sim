@@ -1,0 +1,11 @@
+{
+  "xlsx": {
+    "head": 2,
+    "src": "../excel/**/[^~$]*.xlsx",
+    "dest": "../../Assets/Data"
+  },
+  "ts": false,
+  "json": {
+    "uglify": false
+  }
+}
