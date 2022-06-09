@@ -1,40 +1,40 @@
 {
   "roles": [
     {
-      "id#id": 1.0,
-      "name#string": "曹操",
-      "familyName#string": "曹",
-      "name2#string": "孟德"
+      "id": 1.0,
+      "name": "曹操",
+      "familyName": "曹",
+      "nickName": "孟德"
     },
     {
-      "id#id": 2.0,
-      "name#string": "刘备",
-      "familyName#string": "刘",
-      "name2#string": "玄德"
+      "id": 2.0,
+      "name": "刘备",
+      "familyName": "刘",
+      "nickName": "玄德"
     },
     {
-      "id#id": 3.0,
-      "name#string": "孙权",
-      "familyName#string": "孙",
-      "name2#string": "仲谋"
+      "id": 3.0,
+      "name": "孙权",
+      "familyName": "孙",
+      "nickName": "仲谋"
     },
     {
-      "id#id": 4.0,
-      "name#string": "荀彧",
-      "familyName#string": "荀",
-      "name2#string": "文若"
+      "id": 4.0,
+      "name": "荀彧",
+      "familyName": "荀",
+      "nickName": "文若"
     },
     {
-      "id#id": 5.0,
-      "name#string": "诸葛亮",
-      "familyName#string": "诸葛",
-      "name2#string": "孔明"
+      "id": 5.0,
+      "name": "诸葛亮",
+      "familyName": "诸葛",
+      "nickName": "孔明"
     },
     {
-      "id#id": 6.0,
-      "name#string": "周瑜",
-      "familyName#string": "周",
-      "name2#string": "公瑾"
+      "id": 6.0,
+      "name": "周瑜",
+      "familyName": "周",
+      "nickName": "公瑾"
     }
   ]
 }

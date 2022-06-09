@@ -6,8 +6,7 @@ import numpy as np
 import io
 import os
 
-app = xw.App(add_book=False)
-app.visible = True
+app = xw.App(visible=False,add_book=False)
 app.display_alerts = False
 
 xlFloder = os.path.abspath(os.path.join(os.getcwd(),'..','excel'))

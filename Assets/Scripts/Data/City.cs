@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 [System.Serializable]
 public class Citys
@@ -10,6 +9,23 @@ public class Citys
 	public Citys(City[] citys)
 	{
 		this.citys = citys;
+	}
+
+	public int GetCityNum()
+	{
+		return citys.Length;
+	}
+
+	public City GetCity(int cityId)
+	{
+		for (int i = 0; i < citys.Length; i++)
+		{
+			if (cityId == citys[i].id)
+			{
+				return citys[i];
+			}
+		}
+		return null;
 	}
 }
 
@@ -31,6 +47,16 @@ public class City
 		this.population = population;
 		this.bloc = bloc;
 		this.mayor = mayor;
+	}
+	public string[] GetCityInfo()
+	{
+		string[] strs = new string[5];
+		strs[0] = name;
+		strs[1] = GameDataGenerator.Handle.GetBlocs().GetBloc( bloc).title;
+		strs[2] = GameDataGenerator.Handle.GetRoles().GetRole(mayor).name;
+		strs[3] = size.ToString();
+		strs[4] = population.ToString();
+		return strs;
 	}
 }
 

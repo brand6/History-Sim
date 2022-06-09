@@ -1,0 +1,22 @@
+{
+  "legions": [
+    {
+      "id": 1.0,
+      "bloc": 1.0,
+      "lord": 1.0,
+      "advisor": 4.0
+    },
+    {
+      "id": 2.0,
+      "bloc": 2.0,
+      "lord": 2.0,
+      "advisor": 5.0
+    },
+    {
+      "id": 3.0,
+      "bloc": 3.0,
+      "lord": 3.0,
+      "advisor": 6.0
+    }
+  ]
+}

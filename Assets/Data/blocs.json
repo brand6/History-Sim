@@ -1,0 +1,25 @@
+{
+  "blocs": [
+    {
+      "id": 1.0,
+      "title": "魏",
+      "lord": 1.0,
+      "adviser": 4.0,
+      "color": 1.0
+    },
+    {
+      "id": 2.0,
+      "title": "蜀",
+      "lord": 2.0,
+      "adviser": 5.0,
+      "color": 2.0
+    },
+    {
+      "id": 3.0,
+      "title": "吴",
+      "lord": 3.0,
+      "adviser": 6.0,
+      "color": 3.0
+    }
+  ]
+}
