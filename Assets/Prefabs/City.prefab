@@ -302,5 +302,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CityId: 1
-  name: 
-  cityText: {fileID: 1972035240568099407}
+  cityInfoUI: {fileID: 0}
+  nameText: {fileID: 1972035240568099407}

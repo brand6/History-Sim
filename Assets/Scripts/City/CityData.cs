@@ -7,9 +7,8 @@ public class CityData : MonoBehaviour
 {
 	private Text dataText;
 	
-	public void setData(int cityId)
+	public void setData(City city)
 	{
-		City city = GameDataGenerator.Handle.GetCitys().GetCity(cityId);
 		string[] cityInfo = city.GetCityInfo();
 		for (int i = 0; i < transform.childCount; i++)
 		{

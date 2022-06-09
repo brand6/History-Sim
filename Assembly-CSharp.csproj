@@ -60,7 +60,7 @@
     <Compile Include="Assets\Scripts\Tool\GameDataGenerator.cs" />
     <Compile Include="Assets\Scripts\Data\Role.cs" />
     <Compile Include="Assets\Scripts\Tool\JsonTools.cs" />
-    <Compile Include="Assets\Scripts\City\CityName.cs" />
+    <Compile Include="Assets\Scripts\City\CityInfo.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Camera\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\City\CityLabel.cs" />
