@@ -6,6 +6,7 @@ public class MapManager : BaseManager<MapManager>
 {
 	private int mapW; // 地图宽
 	private int mapH; // 地图高
+	private bool insertTag;
 
 	public MapCube[,] cubes;
 	private List<MapCube> toSearchList = new List<MapCube>(); //存储待查找格子(能到达的边缘格子)
@@ -42,6 +43,7 @@ public class MapManager : BaseManager<MapManager>
 	{
 		MapCube startCube = cubes[(int) startPos.x, (int) startPos.y];
 		MapCube endCube = cubes[(int)endPos.x, (int)endPos.y];
+		
 		// 判断开始点和结束点是否合法（是否可通行，是否能到达）
 		if (!IsCubeAvailable(startCube.x, startCube.y) || !IsCubeAvailable(endCube.x, endCube.y)) return null;
 
@@ -72,19 +74,18 @@ public class MapManager : BaseManager<MapManager>
 					n.G = dealCube.G + GetDistance(n, startCube);
 					n.H = GetDistance(n, endCube);
 					n.Father = dealCube;
-					if(toSearchList.Count == 0) toSearchList.Add(n);
-					else
+					insertTag = false;
+					for (int i = 0; i < toSearchList.Count; ++i)
 					{
-						for (int i = 0; i < toSearchList.Count; ++i)
+						if (n.F < toSearchList[i].F || n.F == toSearchList[i].F && n.H < toSearchList[i].H)
 						{
-							if (n.F < toSearchList[i].F || n.F == toSearchList[i].F && n.H < toSearchList[i].H)
-							{
-								toSearchList.Insert(i, n);
-								break;
-							}
-							toSearchList.Add(n);
+							toSearchList.Insert(i, n);
+							insertTag = true;
+							break;
 						}
+
 					}
+					if (!insertTag) toSearchList.Add(n);
 				}
 			}
 		}
@@ -93,9 +94,10 @@ public class MapManager : BaseManager<MapManager>
 		if (searchedList[searchedList.Count-1] == endCube)
 		{
 			MapCube cube = endCube;
-			while (cube.Father != startCube)
+			while (cube != startCube)
 			{
 				path.Add(cube);
+				cube = cube.Father;
 			}
 		}
 		path.Reverse();

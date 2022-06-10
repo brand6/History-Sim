@@ -56,25 +56,36 @@ public class MapCreater : MonoBehaviour
                 GameObject obj = hit.collider.gameObject;
                 if(obj.GetComponent<MeshRenderer>().material != banMaterial)
 				{
-                    //如果没有开始点，则设置开始点
-                    //如果有开始点，且存在路径，则显示到开始点的路径
+                    //如果存在路径，则清空
+                    if (path != null)
+                    {
+                        startObj.GetComponent<MeshRenderer>().material = defalultMaterial;
+                        startObj = null;
+                        foreach (MapCube cube in path)
+                        {
+                            string cubeName = cube.x + "_" + cube.y;
+                            cubeDict[cubeName].GetComponent<MeshRenderer>().material = defalultMaterial;
+                        }
+                        path = null;
+                    }
+                    //如果没有开始点，并设置开始点
                     if (startObj == null)
                     {
                         startObj = obj;
                         obj.GetComponent<MeshRenderer>().material = startMaterial;
                     }
+                    //如果有开始点，且存在路径，则显示到开始点的路径
                     else
                     {
                         path = MapManager.Instance.FindPath(GetVector2FromName(startObj.name), GetVector2FromName(obj.name));
                         if (path != null)
                         {
-                            startObj = null;
-                            obj.GetComponent<MeshRenderer>().material = endMaterial;
                             foreach (MapCube cube in path)
                             {
                                 string cubeName = cube.x + "_" + cube.y;
                                 cubeDict[cubeName].GetComponent<MeshRenderer>().material = pathMaterial;
                             }
+                            obj.GetComponent<MeshRenderer>().material = endMaterial;
                         }
 
                     }
