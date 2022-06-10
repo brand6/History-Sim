@@ -18,7 +18,7 @@ public class CityInfo : MonoBehaviour
     {
 		city = GameDataGenerator.Handle.GetCitys().GetCity(CityId);
 		nameText.text = city.name;
-		cityData = GetComponentInChildren<CityData>();
+		cityData = cityInfoUI.GetComponentInChildren<CityData>();
 	}
 
 	private void OnMouseEnter()

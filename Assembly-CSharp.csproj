@@ -56,18 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Data\Bloc.cs" />
     <Compile Include="Assets\Scripts\Data\City.cs" />
     <Compile Include="Assets\Scripts\Tool\GameDataGenerator.cs" />
-    <Compile Include="Assets\Scripts\Data\Role.cs" />
-    <Compile Include="Assets\Scripts\Tool\JsonTools.cs" />
-    <Compile Include="Assets\Scripts\City\CityInfo.cs" />
+    <Compile Include="Assets\Scripts\Base\SingletonMono.cs" />
+    <Compile Include="Assets\Scripts\Map\MapManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Camera\LookAtCamera.cs" />
-    <Compile Include="Assets\Scripts\City\CityLabel.cs" />
+    <Compile Include="Assets\Scripts\Data\Role.cs" />
     <Compile Include="Assets\Scripts\City\CityData.cs" />
+    <Compile Include="Assets\Scripts\City\CityLabel.cs" />
+    <Compile Include="Assets\Scripts\Tool\JsonTools.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Data\Bloc.cs" />
+    <Compile Include="Assets\Scripts\Map\MapCube.cs" />
+    <Compile Include="Assets\Scripts\Pool\PoolMgr.cs" />
     <Compile Include="Assets\Scripts\Data\Legion.cs" />
+    <Compile Include="Assets\Scripts\City\CityInfo.cs" />
+    <Compile Include="Assets\Scripts\Base\BaseManager.cs" />
+    <Compile Include="Assets\Scripts\Map\MapCreater.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
