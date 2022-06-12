@@ -51,7 +51,7 @@ public class MapCreater : MonoBehaviour
 		{
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if(Physics.Raycast(ray,out hit, 1000))
+            if (Physics.Raycast(ray, out hit, 1000, LayerMask.GetMask("MapCube")))
 			{
                 GameObject obj = hit.collider.gameObject;
                 if(obj.GetComponent<MeshRenderer>().material != banMaterial)

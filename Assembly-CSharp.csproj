@@ -69,11 +69,11 @@
     <Compile Include="Assets\Scripts\Tool\JsonTools.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Map\MapCube.cs" />
+    <Compile Include="Assets\Scripts\Map\MapCreater.cs" />
     <Compile Include="Assets\Scripts\Pool\PoolMgr.cs" />
     <Compile Include="Assets\Scripts\Data\Legion.cs" />
     <Compile Include="Assets\Scripts\City\CityInfo.cs" />
     <Compile Include="Assets\Scripts\Base\BaseManager.cs" />
-    <Compile Include="Assets\Scripts\Map\MapCreater.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
